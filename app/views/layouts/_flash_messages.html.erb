@@ -1,0 +1,20 @@
+<% flash.each do |key, value| %>
+  
+  <%
+  bootstrap_alert_classes = "alert alert-dismissible"
+  bootstrap_alert_classes += case key
+  when "error"
+    " alert-danger"
+  when "notice"
+    " alert-success"
+  else
+    " alert-warning"
+  end
+  %>
+
+  <div class="<%= bootstrap_alert_classes %>" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <%= value %>
+  </div>
+
+<% end %>

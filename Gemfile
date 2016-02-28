@@ -14,6 +14,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc   # bundle exec rake doc:rails generates the
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
+gem 'honeypot-captcha', '~> 0.0.3'		# Honeypot captchas added to help prevent bots submitting forms	
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
