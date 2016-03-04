@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
-  get 'index' => 'home#index'
   get 'about' => 'home#about'
   get 'contact'  => 'contact#new'
   post 'contact' => 'contact#create'
