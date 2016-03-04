@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'              # Build JSON APIs with ease. Read more: ht
 gem 'sdoc', '~> 0.4.0', group: :doc   # bundle exec rake doc:rails generates the API under doc/api.
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'font-awesome-rails', '~> 4.5', '>= 4.5.0.1'	# use font awesome icons
 
 gem 'honeypot-captcha', '~> 0.0.3'		# Honeypot captchas added to help prevent bots submitting forms	
 

@@ -42,6 +42,16 @@ footer {
   margin-left:15px;
 }
 
+/* allows social buttons to appear inline in collapsed navbar */
+.navbar-collapse .social li {
+  display: inline-block;
+}
+
+/* Social buttons are larger than text and thus need less padding in navbar */
+.navbar-collapse .social li a {
+  padding: 20px 15px 20px 15px;
+}
+
 /* Gliphicons
 -------------------------------------------------- */
 
