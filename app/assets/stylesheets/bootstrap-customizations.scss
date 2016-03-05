@@ -24,32 +24,46 @@ footer {
 
 /* Customized bootstrap classes
 -------------------------------------------------- */
+
+/* switch padding from container to box so we can have multiple rows in a box */
 .container {
 	padding:0px;
 }
-
 .box {
 	padding:30px;
 }
 
+/* mute white background and brand text */
+.box, .navbar, footer {
+  background: rgba(240, 240, 240, 0.9);
+}
+.brand, .address-bar {
+  color: rgb(240, 240, 240);
+}
+
+/* reduce side margins in navbar */
 .container .navbar-header {
   margin-right:0px;
   margin-left:0px;
 }
-
 .container .navbar-collapse {
   margin-right:15px;
   margin-left:15px;
 }
 
+/* reduce spacing between text items in navbar */
+.navbar-collapse:not(.in):not(.collapsing) ul:not(.social) li a {
+  padding: 35px 15px;
+}
+
 /* allows social buttons to appear inline in collapsed navbar */
-.navbar-collapse .social li {
+.navbar-collapse ul.social li {
   display: inline-block;
 }
 
 /* Social buttons are larger than text and thus need less padding in navbar */
-.navbar-collapse .social li a {
-  padding: 20px 15px 20px 15px;
+.navbar-collapse ul.social li a {
+  padding: 20px 15px;
 }
 
 /* Gliphicons
