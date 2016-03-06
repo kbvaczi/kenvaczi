@@ -3,7 +3,7 @@
       <div class="col-sm-12">
         <hr>
         <h2 class="intro-text text-center">
-            Tasty <strong>Ramen</strong>
+            Tasty <strong>Ramen</strong> In Houston
         </h2>
         <hr>
         <p>After experiencing the marvel of <%= link_to "Ramen Tatsuya", "http://ramen-tatsuya.com/" %> in Austin, I decided to embark on a personal quest to find some good ramen in Houston. Fortunately, after searching a bit I found some pretty good offerings around town. These are in no particular order.</p>
@@ -17,7 +17,7 @@
         <h3>Taiko Restaurant <small>Tonkotsu Ramen</small></h3>
       </div>
       <div class="col-sm-4 col-md-3">
-        <%= image_tag "ramen/taiko_with_company", class: "img img-responsive img-rounded" %>
+        <%= image_tag @blog.image_link("taiko_with_company"), class: "img img-responsive img-rounded" %>
       </div>
       <div class="col-sm-8 col-md-9">
         <h4>Best Ramen in Cypress?</h4>
@@ -46,7 +46,7 @@
         <h3>Ramen Jin <small>Tonkotsu Shoyu</small></h3>
       </div>
       <div class="col-sm-4 col-md-3">
-        <%= image_tag "ramen/ramen_jin_with_company", class: "img img-responsive img-rounded" %>
+        <%= image_tag @blog.image_link("ramen_jin_with_company"), class: "img img-responsive img-rounded" %>
       </div>
       <div class="col-sm-8 col-md-9">
         <h4>A solid contender</h4>
@@ -81,7 +81,7 @@
         <h3>Nippon Japanese Restaurant <small>Ramen</small></h3>
       </div>
       <div class="col-sm-4 col-md-3">
-        <%= image_tag "ramen/nippon_with_company", class: "img img-responsive img-rounded" %>
+        <%= image_tag @blog.image_link("nippon_with_company"), class: "img img-responsive img-rounded" %>
       </div>
       <div class="col-sm-8 col-md-9">
         <h4>Best Atmosphere?</h4>
@@ -110,7 +110,7 @@
         <h3>Jinya Ramen Bar <small>Tonkotsu Black</small></h3>
       </div>
       <div class="col-sm-4 col-md-3">
-        <%= image_tag "ramen/jinya", class: "img img-responsive img-rounded" %>
+        <%= image_tag @blog.image_link("jinya"), class: "img img-responsive img-rounded" %>
         <p><small><i>Nobody was feeling photogenic this day so you get just the bowl</i></small></p>
       </div>
       <div class="col-sm-8 col-md-9">
@@ -140,7 +140,7 @@
         <h3>Samurai Noodle <small>Tonkotsu with extra-rich broth and firm (Kata) noodles</small></h3>
       </div>
       <div class="col-sm-4 col-md-3">
-        <%= image_tag "ramen/samurai_with_company", class: "img img-responsive img-rounded" %>
+        <%= image_tag @blog.image_link("samurai_with_company"), class: "img img-responsive img-rounded" %>
       </div>
       <div class="col-sm-8 col-md-9">
         <h4>Most Customizable</h4>

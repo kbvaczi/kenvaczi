@@ -39,16 +39,20 @@
           <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav navbar-left">
               <li>
-                <%= link_to "Home", root_path %> 
+                <%= link_to "Blog", root_path %> 
+              </li>
+              <li>
+                <%= link_to "Archives", blog_index_path %> 
               </li>
               <li>
                 <%= link_to "About", about_path %> 
               </li>
-              <li>
-                <%= link_to "Contact", contact_path %> 
-              </li>              
+              
             </ul>
             <ul class="nav navbar-nav navbar-right social">
+              <li>
+                <%= link_to "", contact_path, class: "fa fa-envelope-square fa-3x" %>
+              </li>
               <li>
                 <%= link_to "", "https://github.com/kbvaczi", class: "fa fa-github-square fa-3x" %>
               </li>
