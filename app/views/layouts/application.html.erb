@@ -5,6 +5,7 @@
     <title>Kenvaczi</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
 
   </head>
@@ -13,8 +14,11 @@
     <div id="content-wrap">
       <!-- Alerts -->  
       <%= render partial: "layouts/flash_messages" %>
+      <div class="brand-wrapper">
+        <div class="brand">Ken Vaczi</div>
+        <div class="brand-logo"></div>
+      </div>
 
-      <div class="brand">Ken Vaczi</div>
       <div class="address-bar">Content nobody asked for</div>
 
       <!-- Navigation -->
