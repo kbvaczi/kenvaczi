@@ -8,20 +8,25 @@
   .brand-wrapper {
     position:relative;
     width: 400px;
-    margin: 0px auto;
+    margin: 10px auto 0px auto;
   }
   .brand-logo {
     position:absolute;
     top:0px;
-    left:125px;
+    left:130px;
     z-index: -1;
-    height:150px;
-    width:150px;
+    height:140px;
+    width:140px;
     background-image: image-url("k.png");
     background-size: 100%;
   }
   .brand {
-    font-size: 4.5em;
+    padding-top:40px;
+    font-size: 3.5em;
+    font-family: "Special Elite","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .address-bar {
+    padding-bottom:20px;    
   }
 }
 
