@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
 
   get 'about' => 'home#about'
+  get 'projects' => 'home#projects'
   get 'contact'  => 'contact#new'
   post 'contact' => 'contact#create'
 
