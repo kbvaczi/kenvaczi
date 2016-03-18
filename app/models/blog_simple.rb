@@ -31,7 +31,7 @@ class BlogSimple
       blog = BlogSimple.new(identifier: blog_identifier, creation_date: blog_creation_date)
       blogs << blog if blog.valid?
     end
-    blogs.reverse #show in reverse chronological order
+    blogs.sort {|a,b| b.creation_date <=> a.creation_date} #show in reverse chronological order
   end
 
   def self.find(identifier)
