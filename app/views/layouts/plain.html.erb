@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Kenvaczi</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= favicon_link_tag %>
+    <%= csrf_meta_tags %>
+
+  </head>
+  <body> 
+
+    <div id="content-wrap">
+
+      <!-- Alerts -->  
+      <%= render partial: "layouts/flash_messages" %>
+      
+      <div class="main">
+        <%= yield %>
+      </div>
+    </div>
+
+  <div class="static-background"></div>         
+  </body>
+
+</html>

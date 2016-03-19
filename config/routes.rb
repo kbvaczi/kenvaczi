@@ -15,6 +15,11 @@ Rails.application.routes.draw do
 
   resources :blog, only: [:index, :show]
 
+  # error pages
+  %w( 404 422 500 503 ).each do |code|
+    get code, :to => "error#show", :code => code
+  end
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

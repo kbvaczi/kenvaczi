@@ -1,0 +1,26 @@
+<div class="container">
+  <%= render partial: "layouts/branding" %>
+  <div class="box col-sm-8 col-sm-offset-2">
+    <div class="row">
+      <div class="col-sm-12">
+        <hr>
+        <h1 class="intro-text text-center">
+          <strong>Error (<%= params[:code] %>)</strong>
+        </h1>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center lead">  
+        <%= @message %>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">  
+        <%= link_to "Take me home", root_path, class: "btn btn-lg btn-primary" %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.container -->
