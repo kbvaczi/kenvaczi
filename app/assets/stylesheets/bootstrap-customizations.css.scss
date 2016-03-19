@@ -57,30 +57,24 @@ footer {
   height: 128px;
 }
 
-/* Fix static background for iOS devices 
+/* Fix static background for iOS devices
+iOS safari appears to not like static background on body. 
+We will create a static background div behind the body and make body background clear. 
 -------------------------------------------------- */
+
 .static-background {
-  background: transparent;
+  background: image-url('bg.jpg') no-repeat top center;
+  background-size: cover;    
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index:-2;
+  height:100vh;
+  width:100vw;
+  transform: translate3d(0,0,0);  /* gets rid of white space behind iOS safari tool bar upon disappearance */
 }
 body {
-  -webkit-overflow-scrolling: touch;
-}
-
-@media screen and (max-width:1200px) {
-  .static-background {
-    background: image-url('bg.jpg') no-repeat top center;
-    background-size: auto 100%;    
-    position:fixed;
-    top:0px;
-    left:0px;
-    z-index:-2;
-    height:100vh;
-    width:100%;
-  }
-  body {
-    background: rgba(255,2,255,0.0);
-  }
-
+  background: rgba(255,2,255,0.0);
 }
 
 /* Customized bootstrap classes
